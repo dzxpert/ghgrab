@@ -139,7 +139,7 @@ fn test_mcp_repo_info_on_actual_repo() {
             serde_json::from_str(content_text).expect("nested text should be valid JSON");
         assert_eq!(info["owner"], "abhixdd");
         assert_eq!(info["repo"], "ghgrab");
-        assert_eq!(info["platform"], "\"GitHub\"");
+        assert_eq!(info["platform"], "GitHub");
     }
 
     drop(stdin);
